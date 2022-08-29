@@ -2,7 +2,16 @@ body {
     background-color: rgb(31, 31, 31);
     font-family: 'Roboto', sans-serif;
 }
+h1{
+    text-align: center;
+    color: rgb(232, 232, 232);
+}
 
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 form{
     width: 30rem;
     margin: 1rem auto;
@@ -16,7 +25,9 @@ label{
     display: block;
 
 }
-input {
+input,
+textarea,
+select {
 width: 100%;
 display: block;
 margin-bottom: 1rem;
@@ -26,7 +37,11 @@ border: 1px solid rgb(184, 184, 184);
 padding: 0.25rem;
 color: rgb(102, 96, 96);
 }
-input:focus{
+textarea{
+    resize: none;
+}
+input:focus,
+textarea:focus{
     background-color: rgb(219, 190, 253);
     color: rgb(86, 6, 178);
     border-color: rgb(86, 6, 178);
