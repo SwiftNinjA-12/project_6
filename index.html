@@ -3,14 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/styles.css" />
     <title>HTML forms</title>
   </head>
   <body>
-    <p>Type = Text + submit</p>
-    <form action="/user-data" method="POST">
-      <input type="text" name="user-name"/>
+    <form action="/" method="GET">
+      <!-- <p>Type = Text + submit</p> -->
+      <label for="userName">Your Name</label>
+      <input type="text" name="user-name" id="userName" value="Tom" />
+      <label for="usereMail">Your email address</label>
+      <input type="email" name="user-email" id="usereMail" />
+      <label for="userage">Your age</label>
+      <input type="number" step="0.5" name="user-age" id="userage" />
+      <label for="userpassword">Password</label>
+      <input type="password" name="user-password" id="userpassword" />
+      <label for="date">The Date</label>
+      <input type="date" name="user-date" id="date" />
+      <hr />
+      <h2>How should we verify your account?</h2>
+      <div class="form-control-inline">
+        <input
+          type="radio"
+          name="verify"
+          id="verify-text-message"
+          value="text"
+        />
+        <label for="verify-text-message">Via text message (SMS)</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-phone" value="phone" />
+        <label for="verify-phone">Via phone call</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-email" value="email" />
+        <label for="verify-email">Via email</label>
+      </div>
+<hr>
+      <div class="form-control-inline">
+        <input type="checkbox" id="agree-terms" name="terms" />
+        <label for="agree-terms">Agree to terms?</label>
+      </div>
+<hr>
+      <div class="form-control-inline">
+        <input type="checkbox" id="contact-email" name="contact" value="email"/>
+        <label for="contact-email">Contact me via email</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="checkbox" id="contact-phone" name="contact" value="phone"/>
+        <label for="contact-phone">Contact me via phone</label>
+      </div>
+
       <button>Submit</button>
     </form>
+
+    <!-- <form action="/" method="GET">
+      <label for="userpassword2">Your password2</label>
+      <input type="password" name="user-password2" id="userpassword2" />
+      <button>Submit</button>
+    </form> -->
   </body>
 </html>

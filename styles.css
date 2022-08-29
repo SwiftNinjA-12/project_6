@@ -1,13 +1,56 @@
 body {
-color: blanchedalmond;
+/* color: blanchedalmond; */
     background-color: rgb(31, 31, 31);
-    margin: 8rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+form{
+    width: 30rem;
+    margin: 1rem auto;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    border-radius: 6px;
+
+}
+label{
+    margin: 0.5rem;
+    display: block;
+
 }
 input {
-width: 20rem;
+width: 100%;
 display: block;
-margin-bottom: 1rem;
+/* margin-bottom: 1rem; */
+box-sizing: border-box;
+font: inherit;
+border: 1px solid rgb(184, 184, 184);
+padding: 0.25rem;
+color: rgb(102, 96, 96);
+}
+input:focus{
+    background-color: rgb(219, 190, 253);
+    color: rgb(86, 6, 178);
+    border-color: rgb(86, 6, 178);
 }
 button{
     display: block;
+    font: inherit;
+    background-color: rgb(86, 6, 178);
+    color: white;
+    border: 1px solid rgb(86, 6, 178);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: rgb(126, 30, 235); 
+    border-color: rgb(126, 30, 235);
+}
+.form-control-inline{
+  display: flex;  
+}
+
+.form-control-inline input{
+    width: auto;
+    margin-right: 0.5rem;
 }
