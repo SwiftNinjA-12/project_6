@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/challenge2/styles.css" />
+    <title>Contact us challenge</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/challenge2" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="userName">Your Name</label>
+              <input
+                type="text"
+                name="user-name"
+                id="userName"
+                required
+                placeholder="Name, First name"
+              />
+            </li>
+            <li>
+              <label for="userEmail">Your E-Mail Address</label>
+              <input
+                type="email"
+                name="user-email"
+                id="userEmail"
+                required
+                placeholder="name@isp.be"
+              />
+            </li>
+            <li>
+              <label for="userphone">Your Phone Number</label>
+              <input
+                type="tel"
+                name="user-phone"
+                id="userphone"
+                required
+                minlength="8"
+              />
+            </li>
+
+            <li>
+              <label for="usermessage">Your message</label>
+              <textarea
+                name="user-message"
+                id="usermessage"
+                rows="6"
+                required
+                minlength="10"
+                maxlength="200"
+              ></textarea>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <label for="find-us">How did you find us?</label>
+          <select name="how-find-us" id="find-us" required>
+            <option value="webSearch">Websearch</option>
+            <option value="wordOfMouth">Word of Mouth</option>
+            <option value="Other">Other</option>
+          </select>
+        </section>
+        <section>
+          <h2>How should we reply?</h2>
+          <ul>
+            <li class="radios">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-call"
+                value="call"
+                required
+              />
+              <label for="reply-call">Call me</label>
+            </li>
+            <li class="radios">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-email"
+                value="email"
+                required
+              />
+              <label for="reply-email">Send me an email</label>
+            </li>
+            <li class="radios">
+              <input
+                type="radio"
+                name="reply"
+                id="reply-none"
+                value="none"
+                required
+              />
+              <label for="reply-none">Don't reply</label>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <div class="radios" id="accpetterms">
+            <input type="checkbox" name="terms" id="terms" required />
+            <label for="terms">Accept Terms</label>
+          </div>
+        </section>
+
+        <section id="form-actions">
+            <button class="btn-empty" type="reset">Clear</button>
+            <button class="btn-filled">Submit</button>
+        </section>
+      </form>
+    </main>
+  </body>
+</html>

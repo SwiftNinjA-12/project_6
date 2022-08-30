@@ -3,13 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="challenge.css" />
+    <link rel="stylesheet" href="/challenge/challenge.css" />
     <title>Contact us</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
   </head>
@@ -18,7 +12,7 @@
       <h1>Contact Us</h1>
     </header>
     <main>
-      <form action="/" method="GET">
+      <form action="/user-data" method="GET">
         <section>
           <h2>How can we help you?</h2>
           <ul>
@@ -29,7 +23,7 @@
                 name="user-name"
                 id="userName"
                 required
-                placeholder="Surname, Name"
+                placeholder="Name, First name"
               />
             </li>
             <li>
@@ -54,14 +48,14 @@
             
             <li>
                 <label for="usermessage">Your message</label>
-                <textarea name="user-message" id="usermessage" rows="5"></textarea>
+                <textarea name="user-message" id="usermessage" rows="6"></textarea>
             </li>
             <li>
-                <label for="find-us">How did you find us?</label>
-                <select name="how-find-us" id="find-us">
-                    <option value="webSearch">Websearch</option>
-                    <option value="wordOfMouth">Word of Mouth</option>
-                    <option value="Other">Other</option>
+                <label for="channel">How did you find us?</label>
+                <select name="channel" id="channel-">
+                    <option value="search">Websearch</option>
+                    <option value="word-of-mouth">Word of Mouth</option>
+                    <option value="other">Other</option>
                 </select>
             </li>
         </ul>
@@ -84,16 +78,16 @@
               </ul>
         </Section>
         <section>
-            <div>
+            <div class="radios" id="accpetterms">
                 <input type="checkbox" name="terms" id="terms" required>
                 <label for="terms">Accept Terms</label>
             </div>
         </section>
-        <section>
-        <div>
-            <button id="btnclear" type="reset">Clear</button>
-            <button id="btnsubmit">Submit</button>
-        </div>
+        <section id="form-actions">
+       
+            <button class="btnclear" type="reset">Clear</button>
+            <button class="btnsubmit">Submit</button>
+      
     </section>
       </form>
     </main>
