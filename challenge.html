@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="challenge.css" />
+    <title>Contact us</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us</h1>
+    </header>
+    <main>
+      <form action="/" method="GET">
+        <section>
+          <h2>How can we help you?</h2>
+          <ul>
+            <li>
+              <label for="userName">Your Name</label>
+              <input
+                type="text"
+                name="user-name"
+                id="userName"
+                required
+                placeholder="Surname, Name"
+              />
+            </li>
+            <li>
+              <label for="userEmail">Your E-Mail Address</label>
+              <input
+                type="email"
+                name="user-email"
+                id="userEmail"
+                required
+                placeholder="name@isp.be"
+              />
+            </li>
+            <li>
+              <label for="userphone">Your Phone Number</label>
+              <input
+                type="number"
+                name="user-phone"
+                id="userphone"
+                required
+              />
+            </li>
+            
+            <li>
+                <label for="usermessage">Your message</label>
+                <textarea name="user-message" id="usermessage" rows="5"></textarea>
+            </li>
+            <li>
+                <label for="find-us">How did you find us?</label>
+                <select name="how-find-us" id="find-us">
+                    <option value="webSearch">Websearch</option>
+                    <option value="wordOfMouth">Word of Mouth</option>
+                    <option value="Other">Other</option>
+                </select>
+            </li>
+        </ul>
+        </section>
+        <Section>
+            <h2>How should we reply?</h2>
+            <ul>
+                <li class="radios">
+                    <input type="radio" name="reply" id="reply-call" value="call" required />
+                    <label for="reply-call">Call me</label>
+                  </li>
+                <li class="radios">
+                    <input type="radio" name="reply" id="reply-email" value="email" required />
+                    <label for="reply-email">Send me an email</label>
+                </li>
+                <li class="radios">
+                    <input type="radio" name="reply" id="reply-none" value="none" required />
+                    <label for="reply-none">Don't reply</label>
+                </li>
+              </ul>
+        </Section>
+        <section>
+            <div>
+                <input type="checkbox" name="terms" id="terms" required>
+                <label for="terms">Accept Terms</label>
+            </div>
+        </section>
+        <section>
+        <div>
+            <button id="btnclear" type="reset">Clear</button>
+            <button id="btnsubmit">Submit</button>
+        </div>
+    </section>
+      </form>
+    </main>
+  </body>
+</html>
